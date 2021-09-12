@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#board{
+    width: 80vh;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+
+.card{
+    width: 100px !important ;
+    height: 100px !important;
+   position:relative; 
+   margin: 10px;
+ } 
+
+ .card:hover{
+     transform: scale(.9);
+     transition: transform .3s;
+ }
+
+img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 5%;
+}
+
+
+.card.flip .temp{
+    display: none;
+}
+
